@@ -1,0 +1,51 @@
+/* Agregar una regla para definir el color de fondo del documento en #222, y el color del texto en #ee6.
+Agregar una regla para centrar el título principal del documento.
+Mostrar todos los párrafos con una fuente sans-serif.
+Agregar una regla para mostrar en color #eee todos los títulos del documento.
+Agregar un borde inferior color blanco a todos los elementos <strong>.
+Mostrar el fondo gris #444 y el texto en negrita para todos los elementos con la clase the-force.
+Mostrar el texto con color #66f para los elementos con la clase light-side, y color #f33 para la clase dark-side.
+Agregar la regla list-style-type: circle; a los elementos del listado con ID og-trilogy.
+Agregar padding-left al segundo listado de películas.
+Agregar margin-top al último elemento del tercer listado de películas.
+Bonus Tracks:
+
+Hacer que todos los títulos muestren su texto en mayúscula
+Hacer que la primera linea del primer párrafo se muestre color #efe
+Hacer que el título principal cambie de color cuando se pasa el puntero por encima.
+Hacer que los links visitados cambien a color gris.
+Mostrar los links sin atributo href en cursiva.
+Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre #111 y 333. */
+body{
+    background-color: #222;
+    color: #ee6;
+}
+
+h1{
+    text-align: center;
+}
+p{
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #eee;
+}
+strong {
+    border-bottom: 1px solid white;
+}
+.the-force {
+    background-color: #444;
+    font-weight: bold;
+}
+.light-side{
+    color: #66f;
+}
+.dark-side{
+    color: #f33;
+}
+#og-trilogy{
+    list-style-type: circle;
+}
+.movies-list:nth-of-type(3) li:last-child {
+    margin-top: 20px;
+}
