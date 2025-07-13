@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control de Versiones con Git</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- 1 - Instalar Bootstrap
+Instalar Bootstrap en el documento utilizando alguna de las dos formas vistas en clase:
+CDN: Agregar el enlace al archivo CSS y JS de Bootstrap desde su servidor oficial.
+Archivos locales: Descargar los archivos de Bootstrap y enlazarlos desde el proyecto.
+
+2 - Usar Clases de Bootstrap
+Aplicar las siguientes modificaciones utilizando clases de Bootstrap:
+Centrar el título <h1>.
+Cambiar el tamaño del primer párrafo para que sea más grande.
+Cambiar el estilo del botón de envío del formulario.
+Cambiar el estilo y color de la tabla.
+Agregar margenes y sombra al listado de comandos.
+
+3 - Usar Componentes de Bootstrap
+Agregar al menos dos componentes de Bootstrap a la página. Algunas sugerencias:
+Cards: Contener alguno de los elementos actuales en una tarjeta.
+List Group: Para mostrar listados de una forma estilizada.
+Navbar: Agregar una barra de navegación en la parte superior de la página.
+Accordion: Para mostrar componentes o secciones de una a la vez
+Carousel: Incluir un carrusel de imágenes.
+Container: Para agregar un espaciado a todo el documento -->
+<body class="bg-light text-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Git Control</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+
+    <h1 class="text-center mb-4">Control de Versiones con Git</h1>
+    <p class="fs-5">
+      <strong>Git</strong> es un sistema de control de versiones distribuido, ampliamente utilizado en el desarrollo de
+      software moderno. Fue creado para gestionar proyectos de forma rápida, eficiente y colaborativa.
+    </p>
+
+    <h2>Comandos más populares de Git</h2>
+    <ul class="list-group mb-4 shadow p-3">
+      <li class="list-group-item"><code>git init</code> - Inicializa un nuevo repositorio Git en el directorio actual.</li>
+      <li class="list-group-item"><code>git clone [url]</code> - Clona un repositorio remoto.</li>
+      <li class="list-group-item"><code>git status</code> - Muestra el estado del repositorio.</li>
+      <li class="list-group-item"><code>git add [archivo]</code> - Agrega un archivo al área de preparación.</li>
+      <li class="list-group-item"><code>git commit -m "[mensaje]"</code> - Crea un commit con mensaje.</li>
+      <li class="list-group-item"><code>git push</code> - Sube los cambios al repositorio remoto.</li>
+      <li class="list-group-item"><code>git pull</code> - Trae y fusiona cambios remotos.</li>
+      <li class="list-group-item"><code>git checkout [rama]</code> - Cambia de rama.</li>
+    </ul>
+
+    <h2>Comparación con otros sistemas</h2>
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Sistema</th>
+          <th>Tipo</th>
+          <th>Popularidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Git</td>
+          <td>Distribuido</td>
+          <td>Muy alta</td>
+        </tr>
+        <tr>
+          <td>SVN</td>
+          <td>Centralizado</td>
+          <td>Media</td>
+        </tr>
+        <tr>
+          <td>Mercurial</td>
+          <td>Distribuido</td>
+          <td>Baja</td>
+        </tr>
+        <tr>
+          <td>Perforce</td>
+          <td>Centralizado</td>
+          <td>Especializado (AAA, empresas)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="card mt-4 mb-5">
+      <div class="card-body">
+        <h2>¿Ya usaste Git?</h2>
+        <p>Completá el siguiente formulario para compartir tu experiencia:</p>
+
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="experiencia" class="form-label">¿Qué usás más?</label>
+            <select id="experiencia" name="experiencia" class="form-select">
+              <option value="git">Git</option>
+              <option value="github">Git + GitHub</option>
+              <option value="otro">Otro sistema</option>
+              <option value="ninguno">Todavía no uso ninguno</option>
+            </select>
+          </div>
+
+          <input type="submit" value="Enviar" class="btn btn-success">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
